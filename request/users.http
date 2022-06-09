@@ -1,0 +1,41 @@
+
+### Request para USER API
+### creando un nuevo user, no pasandole nada. Se espera error.
+POST http://localhost:3000/create
+
+### creando un nuevo user, pasandole username y password con string. Se espera un 200.
+POST http://localhost:3000/create
+Content-Type: application/json
+
+{
+    "username":"frankb89",
+    "password":"SuperPassword"
+}
+
+
+### creando un nuevo user, pasandole username con string y password con integer. Se espera un 400.
+POST http://localhost:3000/create
+Content-Type: application/json
+
+{
+    "username":"frankb89",
+    "password":12345
+}
+
+### creando un nuevo user, pasandole username con integer y password con string. Se espera un 400.
+POST http://localhost:3000/create
+Content-Type: application/json
+
+{
+    "username":12345,
+    "password":"SuperPassword"
+}
+
+### creando un nuevo user, pasandole un objeto sin campos username y password. Se espera un 400.
+POST http://localhost:3000/create
+Content-Type: application/json
+
+{
+    "field1":"frankb89",
+    "field2":"SuperPassword"
+}
