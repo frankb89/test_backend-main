@@ -67,12 +67,13 @@ Una vez finalizado el test, suba la prueba a una cuenta de github propia con acc
 
 Para su instalación haga un clone de este repositorio, dirijase a la carpeta descargada y ejecute en consola:
 
-npm i
-npm run dev
+
+`npm i`
+`npm run dev`
 
 Si quiere ver un swagger con la documentación de la api, vaya a:
 
-http://localhost:3000/docs
+`http://localhost:3000/docs`
 
 Se han creado requests con Rest-Client en la carpeta /request
 
